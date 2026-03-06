@@ -19,7 +19,6 @@ export const PERSONAL = {
   resumeUrl: "/resume/VA-R-03-2026u.pdf",
   linkedinUrl: "https://www.linkedin.com/in/john-andrei-tacujan-123ry/",
   githubUrl: "https://github.com/DreiDev04",
-
   heroImage: "/1.png",
   heroImageAlt: "Portrait photo",
   stickers: ["BASED IN TARLAC, PH", "CS @ 2026"],
