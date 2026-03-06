@@ -1,6 +1,6 @@
 import { Nav } from "@/components/sections/nav";
 import { Hero, MassiveTicker } from "@/components/sections/hero";
-import { Pivot } from "@/components/sections/pivot";
+import { Approach } from "@/components/sections/approach";
 import { Solutions } from "@/components/sections/solutions";
 import { TechSpecs } from "@/components/sections/tech-specs";
 import { Footer } from "@/components/sections/footer";
@@ -11,7 +11,7 @@ export default function Page() {
       <Nav />
       <Hero />
       <MassiveTicker />
-      <Pivot />
+      <Approach />
       <Solutions />
       <TechSpecs />
       <Footer />

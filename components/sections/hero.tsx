@@ -202,27 +202,6 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Services grid */}
-        <div className="bg-border gap-px grid grid-cols-1 md:grid-cols-2 border-t-2 border-border">
-          {SERVICES.map((service, i) => (
-            <motion.div
-              key={i}
-              {...(inView ? fadeUp(0.38 + i * 0.05) : { initial: { opacity: 0, y: 28 } })}
-              className="bg-background px-8 md:px-10 py-8 md:py-10"
-            >
-              <span
-                className="font-mono font-bold text-electric block mb-3 leading-none"
-                style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.6rem)" }}
-              >
-                {String(i + 1).padStart(2, "0")}
-              </span>
-              <span className="text-foreground text-base md:text-lg font-semibold leading-snug block">
-                {service}
-              </span>
-            </motion.div>
-          ))}
-        </div>
-
       </div>
 
       {/* Scroll hint */}

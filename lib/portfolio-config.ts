@@ -11,7 +11,7 @@
 export const PERSONAL = {
   name: "John Andrei",
   nameShort: "DREI",
-  role: "Technical VA &\nOperations Architect",
+  role: "Virtual Assistant & AI Specialist",
   tagline: "I bridge the gap between code and business operations.",
   email: "tacujan.andrei@gmail.com",
   location: "Philippines",
@@ -22,10 +22,7 @@ export const PERSONAL = {
 
   heroImage: "/1.png",
   heroImageAlt: "Portrait photo",
-  stickers: [
-    "BASED IN TARLAC, PH",
-    "CS @ 2026",
-  ],
+  stickers: ["BASED IN TARLAC, PH", "CS @ 2026"],
 } as const;
 
 // ─── Hero Ticker Items ────────────────────────────────────────
@@ -47,45 +44,57 @@ export const TICKER_ITEMS: string[] = [
 // ─── Navigation ───────────────────────────────────────────────
 
 export const NAV_LINKS = [
-  { label: "Work",     href: "#solutions" },
-  { label: "Approach", href: "#pivot"     },
-  { label: "Stack",    href: "#tech-specs" },
-  { label: "Contact",  href: "#contact"   },
+  { label: "Services", href: "#services" },
+  { label: "Work", href: "#solutions" },
+  { label: "Stack", href: "#tech-specs" },
+  { label: "Contact", href: "#contact" },
 ] as const;
 
-// ─── Pivot / "The Bridge" Section ────────────────────────────
+// ─── What I Offer Section ────────────────────────────────────
 
 export const PIVOT = {
-  eyebrow: "The Approach",
-  heading: "Where Code\nMeets Operation.",
+  eyebrow: "What I Offer",
+  heading: "Your Business\nNeeds. Solved.",
   bodyLeft:
-    "Most businesses have two problems: software that ignores workflow reality, and operations teams that can't speak to engineers. I exist in that gap.",
+    "From handling your daily admin tasks to building complex AI systems, I provide comprehensive virtual assistance that scales with your business needs.",
   bodyRight:
-    "I design, build, and deploy the technical layer — then train the humans who use it. From AI model pipelines to client-facing dashboards to automating the Monday-morning report.",
-  pillars: [
+    "Whether you need someone to manage your operations, integrate AI into your workflows, or build custom applications from scratch — I've got you covered.",
+  services: [
     {
       number: "01",
-      label: "Diagnose",
+      title: "General VA",
       description:
-        "Map existing workflows, identify repetition, quantify time cost.",
+        "Complete administrative support including email management, scheduling, data entry, research, and customer service to keep your business running smoothly.",
     },
     {
       number: "02",
-      label: "Architect",
+      title: "AI Integration & Automation",
       description:
-        "Design the technical solution with scalability and handoff in mind.",
+        "Transform your workflows with intelligent automation, from chatbots and document processing to custom AI solutions that save time and reduce errors.",
     },
     {
       number: "03",
-      label: "Build",
+      title: "Video Editing ",
       description:
-        "Ship clean, documented code — or configure no-code tools when appropriate.",
+        "From Short-form content to long-form videos, I provide video editing services — cutting, color grading, subtitles, and format optimization for any platform.",
     },
     {
       number: "04",
-      label: "Operate",
+      title: "Prompt Engineering",
       description:
-        "Monitor, iterate, and document so your team can own it long-term.",
+        "Craft and optimize AI prompts for maximum effectiveness, ensuring your AI tools deliver precise, relevant, and actionable results every time.",
+    },
+    {
+      number: "05",
+      title: "FullStack Development",
+      description:
+        "End-to-end web applications, APIs, and custom software solutions built with modern technologies to meet your exact business requirements.",
+    },
+    {
+      number: "06",
+      title: "AI Operations Assistants",
+      description:
+        "Deploy specialized AI agents for inventory management, customer support, lead qualification, and workflow optimization that work 24/7.",
     },
   ],
 } as const;
@@ -105,42 +114,45 @@ export type Solution = {
 export const SOLUTIONS: Solution[] = [
   {
     index: "001",
-    category: "AI Implementation",
-    title: "LegalBERT Document Analysis",
+    category: "AI Research & Development",
+    title: "LegalBERT ",
     description:
-      "Fine-tuned a LegalBERT transformer model for automated legal document classification and clause extraction. Reduced manual review time by ~70% in a thesis research context.",
-    outcome: "Thesis research — NLP pipeline, model fine-tuning, evaluation",
-    tags: ["LegalBERT", "Python", "Transformers", "NLP", "FastAPI"],
-    link: "#",
+      "Fine-tuned a LegalBERT transformer model for automated legal document classification and clause extraction. Integrated in a Law Office Management System using FastAPI.",
+    outcome: "Thesis research, model fine-tuning, and Python integration",
+    tags: ["LegalBERT", "Python", "Transformers", "NLP", "FastAPI", "BERT"],
   },
   {
     index: "002",
+    category: "Automation",
+    title: "TakboTarlaqueño Marathon ",
+    description:
+      "Workflow automation for a local marathon event. Build a scraper and data processing pipeline to generate a certificate of completion for each runner.",
+    outcome:
+      "Event operations — automated certificate generation for 1500+ runners",
+    tags: ["Python", "Web Scraping", "Data Processing", "PDF Generation"],
+  },
+  {
+    index: "003",
     category: "Process Automation",
     title: "Discord Raffle & Event Bot",
     description:
       "Designed and built a fully-featured Discord bot for community raffle management — entry validation, winner selection, role gating, and audit logging. Zero admin overhead per event.",
     outcome: "Community platform — deployed, actively used",
-    tags: ["Discord.py", "Python", "PostgreSQL", "REST API"],
-    link: "#",
-  },
-  {
-    index: "003",
-    category: "Web Operations",
-    title: "TakboTarlaqueño NGO Platform",
-    description:
-      "End-to-end web platform for a local running NGO — event registration, participant dashboards, result publishing, and an admin CMS. Built and maintained as the sole developer.",
-    outcome: "Live NGO platform — Next.js, Tailwind, Supabase",
-    tags: ["Next.js", "Supabase", "Tailwind CSS", "TypeScript"],
-    link: "#",
+    tags: ["Discord.py", "Python", "REST API"],
   },
   {
     index: "004",
-    category: "Media Operations",
-    title: "Automated Video Post-Production",
+    category: "Video Editing",
+    title: "Long form shortfilm editing ",
     description:
-      "Built a local pipeline using FFmpeg, Whisper AI, and DaVinci Resolve scripting to auto-generate subtitles, cut silences, and export multi-format deliverables.",
-    outcome: "Personal workflow — 3× faster post-production turnaround",
-    tags: ["FFmpeg", "Whisper AI", "DaVinci Resolve", "Python", "Shell"],
+      "Directed and edited a long-form short film project, overseeing the entire post-production process. Utilized DaVinci Resolve for editing, color grading, and final output, delivering a polished final product.",
+    outcome: "Creative project — completed and delivered",
+    tags: [
+      "DaVinci Resolve",
+      "Video Editing",
+      "Color Grading",
+      "Post-Production",
+    ],
   },
 ];
 
@@ -155,38 +167,37 @@ export const TECH_SPECS: SpecGroup[] = [
   {
     label: "Local Infrastructure",
     items: [
-      { key: "GPU",    value: "NVIDIA GTX 1660 Ti (6GB VRAM)" },
-      { key: "RAM",    value: "16 GB DDR4" },
-      { key: "CPU",    value: "Intel Core i5 / i7 (latest dev rig)" },
-      { key: "OS",     value: "Windows 11 / Ubuntu WSL2" },
-      { key: "Storage", value: "NVMe SSD — fast local model inference" },
+      { key: "GPU", value: "NVIDIA GTX 1660 Ti (6GB VRAM)" },
+      { key: "RAM", value: "16 GB DDR4" },
+      { key: "CPU", value: "Ryzen 5 5600g" },
+      { key: "OS", value: "Windows 11 / Ubuntu WSL2" },
     ],
   },
   {
     label: "Cloud & DevOps",
     items: [
-      { key: "Oracle Cloud",  value: "Always Free Tier — VPS, Object Storage" },
-      { key: "Google Cloud",  value: "Run, Functions, Firestore, BigQuery" },
-      { key: "Vercel",        value: "Next.js deployments & edge functions" },
-      { key: "Supabase",      value: "Postgres + Auth + Storage" },
-      { key: "CI/CD",         value: "GitHub Actions" },
+      { key: "Oracle Cloud", value: "Always Free Tier — VPS, Object Storage" },
+      { key: "Google Cloud", value: "Firebase, Google Cloud Console" },
+      { key: "Vercel", value: "Next.js deployments & edge functions" },
+      { key: "Supabase", value: "Postgres + Auth + Storage" },
+      { key: "CI/CD", value: "GitHub Actions" },
     ],
   },
   {
     label: "Core Languages & Frameworks",
     items: [
-      { key: "Python",     value: "FastAPI · Discord.py · Transformers · Pandas" },
+      { key: "Python", value: "FastAPI · Discord.py · Transformers · Pandas" },
       { key: "TypeScript", value: "Next.js · React · Node.js" },
-      { key: "SQL",        value: "PostgreSQL · Supabase · SQLite" },
-      { key: "Shell",      value: "Bash / PowerShell automation scripts" },
+      { key: "SQL", value: "PostgreSQL · Supabase · SQLite" },
+      { key: "Shell", value: "Bash / PowerShell automation scripts" },
     ],
   },
   {
     label: "AI & Data",
     items: [
-      { key: "Models",     value: "BERT · Whisper · GPT API · LLaMA (local)" },
-      { key: "Frameworks", value: "HuggingFace · LangChain · Pandas · NumPy" },
-      { key: "Tooling",    value: "Jupyter · Weights & Biases · ONNX export" },
+      { key: "Models", value: "BERT · LLaMA (local)" },
+      { key: "Frameworks", value: "HuggingFace · Pandas · NumPy" },
+      { key: "Tooling", value: "Jupyter " },
     ],
   },
 ];
@@ -194,12 +205,11 @@ export const TECH_SPECS: SpecGroup[] = [
 // ─── Services / What I Offer ──────────────────────────────────
 
 export const SERVICES = [
+  "General VA",
   "AI Integration & Automation",
-  "Backend API Development",
-  "Operations Workflow Design",
-  "Data Pipeline Construction",
-  "Technical Project Management",
-  "Documentation & SOPs",
+  "AI Operations Assistants",
+  "Prompt Engineering",
+  "FullStack Development",
 ] as const;
 
 // ─── Footer ───────────────────────────────────────────────────

@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { PIVOT } from "@/lib/portfolio-config";
 
-// ─── Service card ─────────────────────────────────────────────
+// ─── Service card ───────────────────────────────────────────────
 function ServiceCard({
   number,
   title,
@@ -42,7 +42,7 @@ export function Approach() {
   const inView = useInView(headingRef, { once: true, amount: 0.3 });
 
   return (
-    <section id="pivot" className="bg-background border-t-2 border-border">
+    <section id="services" className="bg-background border-t-2 border-border">
       <div className="max-w-screen-xl mx-auto border-l-2 border-r-2 border-border">
 
         {/* Top: eyebrow + heading — generous vertical padding */}
