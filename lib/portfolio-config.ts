@@ -16,7 +16,7 @@ export const PERSONAL = {
   email: "tacujan.andrei@gmail.com",
   location: "Philippines",
   availability: "Open to remote work",
-  resumeUrl: "#",
+  resumeUrl: "/resume/VA-R-03-2026.pdf",
   linkedinUrl: "https://www.linkedin.com/in/john-andrei-tacujan-123ry/",
   githubUrl: "https://github.com/DreiDev04",
 
@@ -143,7 +143,7 @@ export const SOLUTIONS: Solution[] = [
   {
     index: "004",
     category: "Video Editing",
-    title: "Long form shortfilm editing ",
+    title: "Long Form Shortfilm Editing and Directing",
     description:
       "Directed and edited a long-form short film project, overseeing the entire post-production process. Utilized DaVinci Resolve for editing, color grading, and final output, delivering a polished final product.",
     outcome: "Creative project — completed and delivered",

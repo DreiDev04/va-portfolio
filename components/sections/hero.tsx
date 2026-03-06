@@ -134,6 +134,7 @@ export function Hero() {
               </a>
               <a
                 href={PERSONAL.resumeUrl}
+                target="_blank"
                 className="text-label text-foreground border-2 border-border px-6 py-3.5 shadow-brutal hover-brutal inline-block text-center"
               >
                 View R&eacute;sum&eacute;

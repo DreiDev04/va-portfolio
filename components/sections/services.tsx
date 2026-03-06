@@ -25,19 +25,19 @@ function ServiceCard({
       initial={{ opacity: 0, y: 24 }}
       animate={inView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.5, ease: "easeOut" as const, delay: index * 0.1 }}
-      className="border-2 border-border p-8 md:p-10 hover-brutal group"
+      className="border-2 border-border p-8 md:p-10 hover-brutal group min-h-[250px] flex flex-col"
     >
       <span className="text-label text-electric block mb-4">{number}</span>
       <h3 className="text-xl md:text-2xl font-black text-foreground tracking-tight mb-4 group-hover:text-electric transition-colors">
         {title}
       </h3>
-      <p className="text-base text-muted-foreground leading-relaxed">{description}</p>
+      <p className="text-base text-muted-foreground leading-relaxed flex-1">{description}</p>
     </motion.div>
   );
 }
 
 // ─── Pivot Section ────────────────────────────────────────────
-export function Approach() {
+export function Services() {
   const headingRef = useRef<HTMLDivElement>(null);
   const inView = useInView(headingRef, { once: true, amount: 0.3 });
 
