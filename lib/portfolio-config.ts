@@ -16,7 +16,7 @@ export const PERSONAL = {
   email: "tacujan.andrei@gmail.com",
   location: "Philippines",
   availability: "Open to remote work",
-  resumeUrl: "/resume/VA-R-03-2026.pdf",
+  resumeUrl: "/resume/VA-R-03-2026u.pdf",
   linkedinUrl: "https://www.linkedin.com/in/john-andrei-tacujan-123ry/",
   githubUrl: "https://github.com/DreiDev04",
 
